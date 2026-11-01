@@ -1,11 +1,11 @@
 :root {
-  --background: #0d0a12;
+  --background: #161514;
   --surface: #1c1523;
   --surface-light: #251a30;
   --purple: #a855f7;
   --purple-light: #c084fc;
   --text: #eee8f4;
-  --muted: #93889d;
+  --muted: #fff;
   --orange: #ff922e;
 }
 
@@ -45,13 +45,9 @@ a {
 .brand {
   font-size: 54px;
   font-weight: 800;
-  letter-spacing: -4px;
-  color: #d8b4fe;
-  text-shadow: 0 0 30px #a855f744;
-}
-
-.brand span {
-  color: var(--purple);
+  line-height: 1.55;
+  letter-spacing: -3.2px;
+  color: #777679;
 }
 
 .header-buttons {
@@ -60,28 +56,48 @@ a {
   margin-top: 18px;
 }
 
+.sp-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 38px;
+    padding: 0 16px;
+    border-radius: var(--r-md);
+    cursor: pointer;
+    border: 1.5px solid var(--color-hairline)rgba(255,255,255,.12)
+;
+    background: var(--panel);
+    color: var(--color-ink);
+    box-shadow: 0 2px 0 var(--color-hairline);
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: transform .2s cubic-bezier(.3, 1.6, .55, 1), border-color .2s, background .2s;
+}
+
 .header-button {
   position: relative;
-  min-width: 180px;
-  padding: 11px 16px;
+  padding: 11px 20px;
   background: #17101f;
-  border: 2px solid;
-  border-radius: 11px;
+  border: 2.4px solid;
+  border-radius: 11.3px;
   color: #eee8f4;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 14px;
+  font-family: "Inter",ui-sans-serif,sans-serif;
+  font-weight: 650;
   text-align: center;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 9px;
+  gap: 15px;
   cursor: pointer;
-  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+  transition: transform .2s cubic-bezier(.3, 1.6, .55, 1), border-color .2s, background .2s;
 }
 
 .discord-button {
-  border-color: #423a4a;
+  border-color: #312f33;
 }
 
 .discord-button:hover {
@@ -162,9 +178,10 @@ a {
   width: min(520px, calc(100% - 40px));
   margin: 40px auto 48px;
   padding: 16px 18px;
-  background: #1a1521;
-  border: 1px solid #382c43;
+  background: #1d1d1f;
+  border: 2.5px solid #292828;
   border-radius: 13px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   color: #d4cfd8;
   text-align: left;
 }
@@ -176,13 +193,14 @@ a {
   margin: 0 0 10px;
   color: #f0edf3;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 750;
+  font-family: "Inter",ui-sans-serif,sans-serif;
 }
 
 .info-icon {
   width: 16px;
   height: 16px;
-  color: #f5d64c;
+  color: #d49d36;
   flex-shrink: 0;
 }
 
