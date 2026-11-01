@@ -1,7 +1,7 @@
 :root {
   --background: #161514;
   --surface: #1c1523;
-  --surface-light: #251a30;
+  --surface-light: #18111f;
   --purple: #a855f7;
   --purple-light: #c084fc;
   --text: #eee8f4;
@@ -97,7 +97,8 @@ a {
 }
 
 .discord-button {
-  border-color: #312f33;
+  border-color: #454546;
+  background: #222121;
 }
 
 .discord-button:hover {
@@ -105,8 +106,9 @@ a {
   transform: translateY(-2px);
 }
 
-.copy-button {
-  border-color: #423a4a;
+.copy-button {  
+  border-color: #454546;
+  background: #222121;
 }
 
 .copy-button:hover {
@@ -139,8 +141,8 @@ a {
   transform: translate(-50%, 5px);
   padding: 8px 12px;
   border-radius: 7px;
-  background: #251a30;
-  border: 1px solid #51405f;
+  background: #202020;
+  border: 1px solid #3a393a;
   color: #eee8f4;
   font-size: 10px;
   font-weight: 500;
@@ -152,13 +154,6 @@ a {
   z-index: 5;
 }
 
-.discord-button::after {
-  content: "Copy invite";
-}
-
-.copy-button::after {
-  content: "Copy IP";
-}
 
 .header-button:hover::after,
 .header-button:focus-visible::after {
@@ -225,7 +220,7 @@ a {
 
 footer {
   width: 100%;
-  border-top: 1px solid #382641;
+  border-top: 1px solid #7a767c;
   padding: 25px 0;
   color: var(--muted);
   font-size: 10px;
