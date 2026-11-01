@@ -169,10 +169,23 @@ a {
   font-size: 11px;
 }
 
-.info-box {
-  width: min(520px, calc(100% - 40px));
+
+.sm-info-box {
+  width: min(520px, calc(100% - 36px));
   margin: 40px auto 48px;
-  padding: 16px 18px;
+  padding: 13px 18px;
+  background: #1d1d1f;
+  border: 2.5px solid #292828;
+  border-radius: 9.8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: #d4cfd8;
+  text-align: center;
+}
+
+.info-box {
+  width: min(520px, calc(100% - 56px));
+  margin: 40px auto 48px;
+  padding: 18px 18px;
   background: #1d1d1f;
   border: 2.5px solid #292828;
   border-radius: 13px;
