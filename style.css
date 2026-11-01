@@ -77,27 +77,27 @@ a {
 }
 
 .header-button {
-  position: relative;
-  padding: 11px 20px;
-  background: #17101f;
-  border: 2.4px solid;
-  border-radius: 11.3px;
-  color: #eee8f4;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 14px;
-  font-family: "Inter",ui-sans-serif,sans-serif;
-  font-weight: 650;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  cursor: pointer;
-  transition: transform .2s cubic-bezier(.3, 1.6, .55, 1), border-color .2s, background .2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 38px;
+    width: 100%;
+    padding: 0 16px;
+    border-radius: 11.9px;
+    border-color: #454546;
+    cursor: pointer;
+    border: 1.5px solid rgba(255,255,255,.12);
+    background: var(--panel);
+    color: var(--color-ink);
+    box-shadow: 0 2px 0 var(--color-hairline);
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: transform .2s cubic-bezier(.3, 1.6, .55, 1), border-color .2s, background .2s;
 }
 
 .discord-button {
-  border-color: #454546;
   background: #222121;
 }
 
@@ -218,9 +218,21 @@ a {
   color: #ffffff;
 }
 
+.ws {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 22px;
+    margin-top: 12px;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+}
+
 footer {
   width: 100%;
-  border-top: 1px solid #7a767c;
+  border-top: 1.3px solid rgba(255,255,255,.12);
   padding: 25px 0;
   color: var(--muted);
   font-size: 10px;
@@ -231,11 +243,25 @@ footer .container {
   width: min(1120px, calc(100% - 40px));
   margin: auto;
   display: flex;
+  text-align: center;
   justify-content: space-between;
 }
 
+.ws-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.ws-line {
+    margin: 0;
+    font-size: 13px;
+    color: var(--color-muted);
+}
+
 footer a {
-  color: var(--purple-light);
+  color: #9A9A9A;
 }
 
 footer a:hover {
